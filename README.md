@@ -6,7 +6,7 @@
 
 Ready-to-run integration examples and free developer tools for **Saudi Arabia's e-invoicing (ZATCA Phase 2 — Fatoora)**.
 
-Brought to you by [**ZATCA Tools**](https://zatcatools.up.railway.app) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant, cryptographically-signed e-invoices in minutes. No accounting system required. **First 50 invoices free.**
+Brought to you by [**ZATCA Tools**](https://zatcatools.up.railway.app) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant, cryptographically-signed e-invoices in minutes. No accounting system required. **Free — no card required.**
 
 | | |
 |---|---|
@@ -60,7 +60,7 @@ Standalone utilities, useful even if you don't use our platform:
 - 🧾 **Standard (B2B) & simplified (B2C) invoices** — signed, cleared/reported, with credit & debit notes
 - 🔗 **Clean REST API** — JSON in, accepted invoice + PDF out; uniform `{error:{code,message}}` errors
 - 🗄️ **XML/PDF archive** of every invoice in its official format
-- 🆓 **Free** — first 50 invoices, no card required
+- 🆓 **Free** — no card required
 
 ## Contributing
 
@@ -76,6 +76,6 @@ Found a bug, or want to add an example in another language (C#, Go, Java…)? Is
 
 ## ملخص بالعربي
 
-هذا المستودع يقدّم أمثلة تكامل جاهزة (cURL / PHP / Node.js / Python) وأدوات مجانية (فك وتوليد رمز QR بصيغة TLV، والتحقق من الرقم الضريبي) للفوترة الإلكترونية السعودية — المرحلة الثانية (فاتورة). مقدّم من [ZATCA Tools](https://zatcatools.up.railway.app): اربط منشأتك مع هيئة الزكاة وأصدر فواتير معتمدة خلال دقائق، مجانًا بأول 50 فاتورة. التوثيق الكامل بالعربي: [docs/api](https://zatcatools.up.railway.app/docs/api).
+هذا المستودع يقدّم أمثلة تكامل جاهزة (cURL / PHP / Node.js / Python) وأدوات مجانية (فك وتوليد رمز QR بصيغة TLV، والتحقق من الرقم الضريبي) للفوترة الإلكترونية السعودية — المرحلة الثانية (فاتورة). مقدّم من [ZATCA Tools](https://zatcatools.up.railway.app): اربط منشأتك مع هيئة الزكاة وأصدر فواتير معتمدة خلال دقائق — مجانًا وبدون بطاقة. التوثيق الكامل بالعربي: [docs/api](https://zatcatools.up.railway.app/docs/api).
 
 </div>
