@@ -5,6 +5,8 @@
  * التشغيل:  ZTK_KEY=ztk_live_xxx node issue-invoice.mjs
  */
 
+import { writeFile } from 'node:fs/promises';
+
 const API = 'https://zatcatools.up.railway.app/api/v1';
 const KEY = process.env.ZTK_KEY ?? 'ztk_live_YOUR_KEY';
 
@@ -36,7 +38,5 @@ console.log(`PDF: ${invoice.links.pdf}`);
 
 // تنزيل ملف الـ PDF المعتمد
 const pdf = await fetch(invoice.links.pdf, { headers: { Authorization: `Bearer ${KEY}` } });
-await import('node:fs/promises').then(fs =>
-  fs.writeFile(`${invoice.number}.pdf`, Buffer.from(await pdf.arrayBuffer()))
-);
+await writeFile(`${invoice.number}.pdf`, Buffer.from(await pdf.arrayBuffer()));
 console.log(`💾 تم حفظ ${invoice.number}.pdf`);

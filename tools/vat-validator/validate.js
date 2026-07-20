@@ -2,7 +2,7 @@
  * التحقق من صحة الرقم الضريبي السعودي (VAT Number) — يشتغل في المتصفح وNode.
  *
  * القواعد الرسمية: 15 خانة رقمية، يبدأ بالرقم 3 وينتهي بالرقم 3.
- * الخانة الحادية عشرة = 1 منشأة مستقلة، 0 = عضو مجموعة ضريبية.
+ * الخانة الحادية عشرة = 1 عضو مجموعة ضريبية، 0 = منشأة مستقلة.
  *
  * أداة مجانية من ZATCA Tools — https://zatcatools.up.railway.app
  */
@@ -20,7 +20,7 @@ export function validateSaudiVat(vat) {
     vat: digits,
     valid: Object.values(checks).every(Boolean),
     checks,
-    vatGroupMember: digits.length === 15 && digits[10] === '0',
+    vatGroupMember: digits.length === 15 && digits[10] === '1',
   };
 }
 

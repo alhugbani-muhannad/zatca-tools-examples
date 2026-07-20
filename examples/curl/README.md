@@ -3,7 +3,7 @@
 # أمثلة cURL — ZATCA Tools API
 
 كل الطلبات تحتاج مفتاح API في الترويسة: `Authorization: Bearer ztk_live_...`
-([كيف أحصل على المفتاح؟](../../README.md#-وش-تلقى-هنا))
+([كيف أحصل على المفتاح؟](../../README.md#quick-start))
 
 </div>
 

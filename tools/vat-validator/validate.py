@@ -3,7 +3,7 @@
 التحقق من صحة الرقم الضريبي السعودي (VAT Number).
 
 القواعد الرسمية: 15 خانة رقمية، يبدأ بالرقم 3 وينتهي بالرقم 3.
-الخانة الحادية عشرة = 1 تعني منشأة مستقلة، و 0 تعني عضو مجموعة ضريبية.
+الخانة الحادية عشرة = 1 تعني عضو مجموعة ضريبية، و 0 تعني منشأة مستقلة.
 
     python validate.py 310122393500003
 
@@ -30,7 +30,7 @@ def validate_saudi_vat(vat: str) -> dict:
         "vat": digits,
         "valid": all(checks.values()),
         "checks": checks,
-        "vat_group_member": len(digits) == 15 and digits[10] == "0",
+        "vat_group_member": len(digits) == 15 and digits[10] == "1",
     }
 
 

@@ -4,7 +4,7 @@
 
 امسح رمز QR بأي قارئ، انسخ النص (base64)، ومرّره للأداة:
 
-    python decode.py "AQ9اBASE64_FROM_QR..."
+    python decode.py "BASE64_FROM_QR"
 
 يدعم وسوم المرحلة الأولى (1-5) والمرحلة الثانية (6-9).
 أداة مجانية من ZATCA Tools — https://zatcatools.up.railway.app
