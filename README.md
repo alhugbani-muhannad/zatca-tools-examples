@@ -1,81 +1,81 @@
-<div dir="rtl">
+<p align="center">
+  <a href="https://zatcatools.up.railway.app"><img src="assets/banner.png" alt="ZATCA Tools — Saudi ZATCA e-Invoicing Examples & Free Tools" width="100%"></a>
+</p>
 
-# 🇸🇦 أمثلة وأدوات الفوترة الإلكترونية — ZATCA Tools
+# Saudi ZATCA e-Invoicing — Examples & Free Tools
 
-أمثلة تكامل جاهزة وأدوات مجانية للفوترة الإلكترونية السعودية (**المرحلة الثانية — منصة فاتورة**).
+Ready-to-run integration examples and free developer tools for **Saudi Arabia's e-invoicing (ZATCA Phase 2 — Fatoora)**.
 
-هذا المستودع مقدّم من [**ZATCA Tools**](https://zatcatools.up.railway.app) — أسرع طريقة تربط منشأتك مع هيئة الزكاة والضريبة والجمارك وتصدر فواتير معتمدة خلال دقائق، بدون نظام محاسبي وبدون تعقيد. **ابدأ مجانًا بأول 50 فاتورة.**
+Brought to you by [**ZATCA Tools**](https://zatcatools.up.railway.app) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant, cryptographically-signed e-invoices in minutes. No accounting system required. **First 50 invoices free.**
 
 | | |
 |---|---|
-| 🌐 المنصة | [zatcatools.up.railway.app](https://zatcatools.up.railway.app) |
-| 📚 توثيق الـ API | [zatcatools.up.railway.app/docs/api](https://zatcatools.up.railway.app/docs/api) |
-| ✍️ المدونة (أدلة عربية) | [zatcatools.up.railway.app/blog](https://zatcatools.up.railway.app/blog) |
+| 🌐 App | [zatcatools.up.railway.app](https://zatcatools.up.railway.app) |
+| 📚 API docs | [zatcatools.up.railway.app/docs/api](https://zatcatools.up.railway.app/docs/api) |
+| ✍️ Blog (Arabic guides) | [zatcatools.up.railway.app/blog](https://zatcatools.up.railway.app/blog) |
 
 ---
 
-## 📦 وش تلقى هنا؟
+## Quick start
 
-### 1) أمثلة التكامل مع الـ API — [`examples/`](examples/)
-
-أصدر فاتورة ضريبية معتمدة من الهيئة بأقل من 30 سطر كود:
-
-| اللغة | الملف |
-|---|---|
-| cURL | [`examples/curl/README.md`](examples/curl/README.md) |
-| PHP | [`examples/php/issue-invoice.php`](examples/php/issue-invoice.php) |
-| Node.js | [`examples/node/issue-invoice.mjs`](examples/node/issue-invoice.mjs) |
-| Python | [`examples/python/issue_invoice.py`](examples/python/issue_invoice.py) |
-
-**كل الأمثلة تستخدم [ZATCA Tools REST API](https://zatcatools.up.railway.app/docs/api):** أنت ترسل بنود الفاتورة كـ JSON، والمنصة تتولى كل التعقيد — XML بصيغة UBL، التوقيع الرقمي، رمز QR، وسلسلة ICV/PIH، والإرسال للهيئة — وترجع لك الفاتورة المعتمدة بروابط PDF وXML جاهزة.
+Issue a ZATCA-compliant invoice in one API call — the platform handles the hard parts (UBL XML, XAdES digital signature, TLV QR code, ICV/PIH chain, clearance/reporting with ZATCA) and returns the accepted invoice with ready PDF/XML links:
 
 ```bash
 curl -X POST https://zatcatools.up.railway.app/api/v1/invoices \
   -H "Authorization: Bearer ztk_live_YOUR_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"type":"simplified","lines":[{"name":"خدمة استشارية","quantity":1,"unit_price":500}]}'
+  -d '{"type":"simplified","lines":[{"name":"Consulting service","quantity":1,"unit_price":500}]}'
 ```
 
-> 🔑 **مفتاح الـ API**: سجّل مجانًا في [ZATCA Tools](https://zatcatools.up.railway.app/start) ← أكمل الربط مع فاتورة ← الإعدادات ← تبويب API ← «توليد مفتاح».
+> 🔑 **Getting an API key**: [sign up free](https://zatcatools.up.railway.app/start) → complete Fatoora onboarding → Settings → API tab → *Generate key*.
 
-### 2) أدوات مجانية — [`tools/`](tools/)
+## 📦 What's inside
 
-أدوات مستقلة تفيدك حتى لو ما كنت تستخدم منصتنا:
+### 1) API integration examples — [`examples/`](examples/)
 
-| الأداة | وش تسوي |
+Issue an accepted tax invoice in under 30 lines, with zero external dependencies:
+
+| Language | File |
 |---|---|
-| [`qr-tlv-decoder`](tools/qr-tlv-decoder/) | فك تشفير رمز QR لأي فاتورة سعودية (TLV → حقول مقروءة) |
-| [`qr-tlv-generator`](tools/qr-tlv-generator/) | توليد رمز QR متوافق مع المرحلة الأولى (TLV base64) |
-| [`vat-validator`](tools/vat-validator/) | التحقق من صحة الرقم الضريبي السعودي (15 رقم) |
+| cURL (all endpoints) | [`examples/curl/README.md`](examples/curl/README.md) |
+| PHP | [`examples/php/issue-invoice.php`](examples/php/issue-invoice.php) |
+| Node.js 18+ | [`examples/node/issue-invoice.mjs`](examples/node/issue-invoice.mjs) |
+| Python 3 | [`examples/python/issue_invoice.py`](examples/python/issue_invoice.py) |
+
+Covered: simplified (B2C) & standard (B2B) invoices, credit/debit notes, listing with filters, and downloading the signed **PDF / UBL XML / QR**.
+
+### 2) Free developer tools — [`tools/`](tools/)
+
+Standalone utilities, useful even if you don't use our platform:
+
+| Tool | What it does |
+|---|---|
+| [`qr-tlv-decoder`](tools/qr-tlv-decoder/) | Decode any Saudi invoice QR code (base64 TLV → readable fields, Phase 1 & 2 tags) |
+| [`qr-tlv-generator`](tools/qr-tlv-generator/) | Generate a Phase-1-compliant TLV QR payload |
+| [`vat-validator`](tools/vat-validator/) | Validate a Saudi VAT registration number (15 digits, format rules) |
+
+## Why ZATCA Tools?
+
+- ⚡ **Onboarding in minutes** — CSR, compliance CSID, the 6 compliance checks, and production CSID are fully automated
+- 🧾 **Standard (B2B) & simplified (B2C) invoices** — signed, cleared/reported, with credit & debit notes
+- 🔗 **Clean REST API** — JSON in, accepted invoice + PDF out; uniform `{error:{code,message}}` errors
+- 🗄️ **XML/PDF archive** of every invoice in its official format
+- 🆓 **Free** — first 50 invoices, no card required
+
+## Contributing
+
+Found a bug, or want to add an example in another language (C#, Go, Java…)? Issues and PRs are welcome 🤝
+
+## License
+
+[MIT](LICENSE) — use freely in your own projects.
 
 ---
 
-## 🤔 ليش ZATCA Tools؟
+<div dir="rtl">
 
-- ⚡ **ربط خلال دقائق**: CSR والشهادات وفحوص التوافق الستة — كلها تلقائية
-- 🧾 **فواتير ضريبية (B2B) ومبسطة (B2C)** موقّعة ومعتمدة، مع إشعارات الدائن والمدين
-- 🔗 **REST API** نظيف للمطورين — JSON داخل، فاتورة معتمدة + PDF خارج
-- 🗄️ **أرشفة XML/PDF** لكل فاتورة بصيغتها النظامية
-- 🆓 **مجاني** — أول 50 فاتورة بدون بطاقة
+## ملخص بالعربي
 
----
-
-## المساهمة
-
-لقيت خطأ أو عندك مثال بلغة ثانية؟ افتح Issue أو Pull Request — كل مساهمة مرحّب فيها 🤝
-
-## الترخيص
-
-[MIT](LICENSE) — استخدم الأكواد بحرية في مشاريعك.
-
-</div>
-
----
-
-<div dir="ltr">
-
-**English summary**: Integration examples (cURL/PHP/Node/Python) and free developer tools (TLV QR decoder/generator, VAT number validator) for Saudi Arabia's ZATCA Phase 2 e-invoicing (Fatoora), provided by [ZATCA Tools](https://zatcatools.up.railway.app) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant e-invoices via a clean REST API. First 50 invoices free.
-
-**Keywords**: ZATCA, Fatoora, فاتورة, الفوترة الإلكترونية, e-invoicing Saudi Arabia, KSA VAT, TLV QR, UBL, simplified tax invoice, فاتورة ضريبية مبسطة
+هذا المستودع يقدّم أمثلة تكامل جاهزة (cURL / PHP / Node.js / Python) وأدوات مجانية (فك وتوليد رمز QR بصيغة TLV، والتحقق من الرقم الضريبي) للفوترة الإلكترونية السعودية — المرحلة الثانية (فاتورة). مقدّم من [ZATCA Tools](https://zatcatools.up.railway.app): اربط منشأتك مع هيئة الزكاة وأصدر فواتير معتمدة خلال دقائق، مجانًا بأول 50 فاتورة. التوثيق الكامل بالعربي: [docs/api](https://zatcatools.up.railway.app/docs/api).
 
 </div>
