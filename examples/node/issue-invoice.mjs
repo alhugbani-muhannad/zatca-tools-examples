@@ -1,13 +1,13 @@
 /**
  * إصدار فاتورة مبسطة معتمدة من ZATCA عبر ZATCA Tools API — Node.js 18+ (fetch مدمج).
- * التوثيق الكامل: https://zatcatools.up.railway.app/docs/api
+ * التوثيق الكامل: https://zatcatools.com/docs/api
  *
  * التشغيل:  ZTK_KEY=ztk_live_xxx node issue-invoice.mjs
  */
 
 import { writeFile } from 'node:fs/promises';
 
-const API = 'https://zatcatools.up.railway.app/api/v1';
+const API = 'https://zatcatools.com/api/v1';
 const KEY = process.env.ZTK_KEY ?? 'ztk_live_YOUR_KEY';
 
 const res = await fetch(`${API}/invoices`, {

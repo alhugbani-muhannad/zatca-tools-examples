@@ -27,6 +27,6 @@ validateSaudiVat('310122393500003');
 
 ---
 
-💡 [ZATCA Tools](https://zatcatools.up.railway.app) يتحقق من الرقم الضريبي تلقائيًا ويربط منشأتك مع الهيئة خلال دقائق — مجانًا.
+💡 [ZATCA Tools](https://zatcatools.com) يتحقق من الرقم الضريبي تلقائيًا ويربط منشأتك مع الهيئة خلال دقائق — مجانًا.
 
 </div>

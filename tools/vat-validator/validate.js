@@ -4,7 +4,7 @@
  * القواعد الرسمية: 15 خانة رقمية، يبدأ بالرقم 3 وينتهي بالرقم 3.
  * الخانة الحادية عشرة = 1 عضو مجموعة ضريبية، 0 = منشأة مستقلة.
  *
- * أداة مجانية من ZATCA Tools — https://zatcatools.up.railway.app
+ * أداة مجانية من ZATCA Tools — https://zatcatools.com
  */
 
 export function validateSaudiVat(vat) {

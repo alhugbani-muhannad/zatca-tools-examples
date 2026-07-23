@@ -4,7 +4,7 @@
  *     node decode.mjs "BASE64_FROM_QR..."
  *
  * يدعم وسوم المرحلة الأولى (1-5) والمرحلة الثانية (6-9).
- * أداة مجانية من ZATCA Tools — https://zatcatools.up.railway.app
+ * أداة مجانية من ZATCA Tools — https://zatcatools.com
  */
 
 const TAGS = {

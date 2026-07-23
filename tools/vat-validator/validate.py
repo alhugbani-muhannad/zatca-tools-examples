@@ -7,7 +7,7 @@
 
     python validate.py 310122393500003
 
-أداة مجانية من ZATCA Tools — https://zatcatools.up.railway.app
+أداة مجانية من ZATCA Tools — https://zatcatools.com
 """
 import re
 import sys

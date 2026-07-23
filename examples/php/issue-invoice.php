@@ -1,7 +1,7 @@
 <?php
 /**
  * إصدار فاتورة مبسطة معتمدة من ZATCA عبر ZATCA Tools API — بدون أي مكتبات خارجية.
- * التوثيق الكامل: https://zatcatools.up.railway.app/docs/api
+ * التوثيق الكامل: https://zatcatools.com/docs/api
  */
 
 $apiKey = getenv('ZTK_KEY') ?: 'ztk_live_YOUR_KEY';
@@ -13,7 +13,7 @@ $payload = [
     ],
 ];
 
-$ch = curl_init('https://zatcatools.up.railway.app/api/v1/invoices');
+$ch = curl_init('https://zatcatools.com/api/v1/invoices');
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,

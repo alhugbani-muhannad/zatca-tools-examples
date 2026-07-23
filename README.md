@@ -1,18 +1,18 @@
 <p align="center">
-  <a href="https://zatcatools.up.railway.app"><img src="assets/banner.png" alt="ZATCA Tools — Saudi ZATCA e-Invoicing Examples & Free Tools" width="100%"></a>
+  <a href="https://zatcatools.com"><img src="assets/banner.png" alt="ZATCA Tools — Saudi ZATCA e-Invoicing Examples & Free Tools" width="100%"></a>
 </p>
 
 # Saudi ZATCA e-Invoicing — Examples & Free Tools
 
 Ready-to-run integration examples and free developer tools for **Saudi Arabia's e-invoicing (ZATCA Phase 2 — Fatoora)**.
 
-Brought to you by [**ZATCA Tools**](https://zatcatools.up.railway.app) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant, cryptographically-signed e-invoices in minutes. No accounting system required. **Free — no card required.**
+Brought to you by [**ZATCA Tools**](https://zatcatools.com) — the fastest way for Saudi businesses to connect to ZATCA and issue compliant, cryptographically-signed e-invoices in minutes. No accounting system required. **Free — no card required.**
 
 | | |
 |---|---|
-| 🌐 App | [zatcatools.up.railway.app](https://zatcatools.up.railway.app) |
-| 📚 API docs | [zatcatools.up.railway.app/docs/api](https://zatcatools.up.railway.app/docs/api) |
-| ✍️ Blog (Arabic guides) | [zatcatools.up.railway.app/blog](https://zatcatools.up.railway.app/blog) |
+| 🌐 App | [zatcatools.com](https://zatcatools.com) |
+| 📚 API docs | [zatcatools.com/docs/api](https://zatcatools.com/docs/api) |
+| ✍️ Blog (Arabic guides) | [zatcatools.com/blog](https://zatcatools.com/blog) |
 
 ---
 
@@ -21,13 +21,13 @@ Brought to you by [**ZATCA Tools**](https://zatcatools.up.railway.app) — the f
 Issue a ZATCA-compliant invoice in one API call — the platform handles the hard parts (UBL XML, XAdES digital signature, TLV QR code, ICV/PIH chain, clearance/reporting with ZATCA) and returns the accepted invoice with ready PDF/XML links:
 
 ```bash
-curl -X POST https://zatcatools.up.railway.app/api/v1/invoices \
+curl -X POST https://zatcatools.com/api/v1/invoices \
   -H "Authorization: Bearer ztk_live_YOUR_KEY" \
   -H "Content-Type: application/json" \
   -d '{"type":"simplified","lines":[{"name":"Consulting service","quantity":1,"unit_price":500}]}'
 ```
 
-> 🔑 **Getting an API key**: [sign up free](https://zatcatools.up.railway.app/start) → complete Fatoora onboarding → Settings → API tab → *Generate key*.
+> 🔑 **Getting an API key**: [sign up free](https://zatcatools.com/start) → complete Fatoora onboarding → Settings → API tab → *Generate key*.
 
 ## 📦 What's inside
 
@@ -76,6 +76,6 @@ Found a bug, or want to add an example in another language (C#, Go, Java…)? Is
 
 ## ملخص بالعربي
 
-هذا المستودع يقدّم أمثلة تكامل جاهزة (cURL / PHP / Node.js / Python) وأدوات مجانية (فك وتوليد رمز QR بصيغة TLV، والتحقق من الرقم الضريبي) للفوترة الإلكترونية السعودية — المرحلة الثانية (فاتورة). مقدّم من [ZATCA Tools](https://zatcatools.up.railway.app): اربط منشأتك مع هيئة الزكاة وأصدر فواتير معتمدة خلال دقائق — مجانًا وبدون بطاقة. التوثيق الكامل بالعربي: [docs/api](https://zatcatools.up.railway.app/docs/api).
+هذا المستودع يقدّم أمثلة تكامل جاهزة (cURL / PHP / Node.js / Python) وأدوات مجانية (فك وتوليد رمز QR بصيغة TLV، والتحقق من الرقم الضريبي) للفوترة الإلكترونية السعودية — المرحلة الثانية (فاتورة). مقدّم من [ZATCA Tools](https://zatcatools.com): اربط منشأتك مع هيئة الزكاة وأصدر فواتير معتمدة خلال دقائق — مجانًا وبدون بطاقة. التوثيق الكامل بالعربي: [docs/api](https://zatcatools.com/docs/api).
 
 </div>

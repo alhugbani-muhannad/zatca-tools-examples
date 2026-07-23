@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 إصدار فاتورة مبسطة معتمدة من ZATCA عبر ZATCA Tools API — مكتبة Python القياسية فقط.
-التوثيق الكامل: https://zatcatools.up.railway.app/docs/api
+التوثيق الكامل: https://zatcatools.com/docs/api
 
 التشغيل:  ZTK_KEY=ztk_live_xxx python issue_invoice.py
 """
@@ -10,7 +10,7 @@ import os
 import urllib.error
 import urllib.request
 
-API = "https://zatcatools.up.railway.app/api/v1"
+API = "https://zatcatools.com/api/v1"
 KEY = os.environ.get("ZTK_KEY", "ztk_live_YOUR_KEY")
 
 payload = {

@@ -9,7 +9,7 @@
 
 ```bash
 export ZTK_KEY="ztk_live_YOUR_KEY"
-export ZTK="https://zatcatools.up.railway.app/api/v1"
+export ZTK="https://zatcatools.com/api/v1"
 ```
 
 ## 1) Account — بيانات المنشأة والحصة

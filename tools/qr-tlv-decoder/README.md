@@ -42,6 +42,6 @@ python decode.py "ASbZhdik2LPYs9ipINin2YTYo9mF2YQg2KfZhNiq2KzYp9ix2YrYqQIPMzEwMT
 
 ---
 
-💡 تبي تصدر فواتير برموز QR معتمدة تلقائيًا؟ جرّب [ZATCA Tools](https://zatcatools.up.railway.app) — مجانًا.
+💡 تبي تصدر فواتير برموز QR معتمدة تلقائيًا؟ جرّب [ZATCA Tools](https://zatcatools.com) — مجانًا.
 
 </div>
